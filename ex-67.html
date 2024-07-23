@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        div {
+            text-align: center;
+            width: 15%;
+            padding: 2%;
+            background-color: beige;
+            margin-left: 40.5%;
+            margin-top: 35vh;
+            border: 1px solid darkblue;
+            border-radius: 5px;
+        }
+
+        input {
+            background-color: mediumvioletred;
+            border: 1px solid mediumvioletred;
+            padding: 4px;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+
+        <input onclick="result()" type="button" value="Show the day of the week">
+
+        <p id="demo"></p>
+
+    </div>
+
+    <script>
+
+        function result() {
+
+            let day = '';
+
+            switch (new Date().getDay()) {
+
+                case 0:
+                    day = "Sunday";
+                    break;
+
+                case 1:
+                    day = "Monday";
+                    break;
+
+                case 2:
+                    day = "Tuseday";
+                    break;
+
+                case 3:
+                    day = "Wednesday";
+                    break;
+
+                case 4:
+                    day = "Thursday";
+                    break;
+
+                case 5:
+                    day = "Friday";
+                    break;
+
+                case 6:
+                    day = "Saturday";
+
+            }
+
+            document.getElementById("demo").innerHTML = "Today is " + day;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
